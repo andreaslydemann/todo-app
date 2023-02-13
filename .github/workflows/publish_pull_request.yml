@@ -6,8 +6,9 @@ on:
 
 jobs:
   publish:
-    runs-on: ubuntu-latest
-    permissions: read-all|write-all
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@v2
