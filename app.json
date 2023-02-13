@@ -28,6 +28,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8c5b449f-e093-4f5a-b736-d03a10cb5aed"
+      }
+    },
+    "owner": "andreaslydemann"
   }
 }
