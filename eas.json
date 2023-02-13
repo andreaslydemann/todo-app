@@ -1,0 +1,21 @@
+{
+  "cli": {
+    "requireCommit": false
+  },
+  "build": {
+    "internal": {
+      "distribution": "internal",
+      "releaseChannel": "internal",
+      "ios": {
+        "enterpriseProvisioning": "universal",
+        "cocoapods": "1.11.2"
+      },
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "NODE_ENV": "test"
+      }
+    }
+  }
+}
