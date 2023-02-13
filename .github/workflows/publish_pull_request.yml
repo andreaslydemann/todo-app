@@ -37,7 +37,6 @@ jobs:
         uses: mshick/add-pr-comment@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          EXPO_PROJECT: "@andreaslydemann/todo-app"
         with:
           message: |
             ## Test this PR with Expo Go
