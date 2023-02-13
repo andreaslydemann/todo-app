@@ -1,21 +1,34 @@
 {
   "cli": {
-    "requireCommit": false
+    "requireCommit": false,
+    "version": ">= 3.5.2"
   },
   "build": {
-    "internal": {
-      "distribution": "internal",
-      "releaseChannel": "internal",
+    "production": {
+      "releaseChannel": "production",
+      "distribution": "store",
       "ios": {
-        "enterpriseProvisioning": "universal",
+        "resourceClass": "m1-medium",
         "cocoapods": "1.11.2"
       },
-      "android": {
-        "buildType": "apk"
-      },
       "env": {
-        "NODE_ENV": "test"
+        "NODE_ENV": "prod",
+        "VERSION": "1.0.0",
+        "BUILD_NUMBER": "1"
       }
     }
-  }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "yourappleid@apple.com",
+        "ascAppId": "XXXXXXXX",
+        "appleTeamId": "XXXXXXXX"
+      },
+      "android": {
+        "track": "production",
+        "changesNotSentForReview": true
+      }
+    }
+  },
 }
