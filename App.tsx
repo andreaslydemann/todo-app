@@ -1,20 +1,12 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import "react-native-url-polyfill/auto";
+import { queryClient } from "./src/api/react-query/queryClient";
+import { QueryClientProvider } from "react-query";
+import TodoScreen from "./src/screens/TodoScreen";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>This is a new text 2!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <QueryClientProvider client={queryClient}>
+      <TodoScreen />
+    </QueryClientProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});

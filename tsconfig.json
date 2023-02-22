@@ -6,6 +6,8 @@
     "paths": {
       "@api/*": ["api/*"],
       "@generated-api/*": ["generated-api/*"],
+      "@screens/*": ["screens/*"],
+      "@hooks/*": ["hooks/*"],
     },
   }
 }
